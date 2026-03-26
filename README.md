@@ -4,6 +4,10 @@ A NIP-46 remote signer daemon that bridges Nostr signing requests to a [Status K
 
 Private keys are stored on the card's secure element and never exist in plaintext on disk. Any NIP-46-compatible client (Coracle, noStrudel, Snort) can use it as a drop-in signer.
 
+## Demo
+
+https://github.com/mmlado/nip46-keycard/blob/main/docs/demo.mp4
+
 ## How it works
 
 ```
