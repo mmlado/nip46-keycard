@@ -1,4 +1,5 @@
 nimcache/
 nimblecache/
 htmldocs/
-src/nip46keycard
+nip46keycard
+config.toml

@@ -1,0 +1,26 @@
+[relay]
+urls = ["wss://relay.damus.io", "wss://nos.lol"]
+
+[keycard]
+# Optional: store PIN here (less secure) or leave empty to be prompted at startup
+pin = "123456"
+# 32-byte pairing token in hex — printed after first pairing or after running reinit_card.
+# Set this to pair without re-entering a password on every startup.
+pairing_token = "675deabb0d7c724b4a36caad0e280826159e89886f7082535d431e924848bcf1"
+
+[signer]
+# Signer keypair file — generated on first run if absent
+key_file = "~/.config/nip46-keycard/signer.key"
+
+[approval]
+# "policy" — auto-approve kinds listed in allowed_kinds
+# "always" — approve everything (testing only)
+mode = "policy"
+
+# Used when mode = "policy"
+allowed_kinds = [1, 0, 3]
+
+[connection]
+# Optional shared secret embedded in the bunker:// URL
+# Clients must provide this secret in the connect request
+secret = ""
